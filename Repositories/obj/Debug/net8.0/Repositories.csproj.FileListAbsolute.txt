@@ -1,0 +1,17 @@
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\RepositoryContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\RepositoryContract.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\bin\Debug\net8.0\Entities.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Repositories\obj\Debug\net8.0\ref\Repositories.dll

@@ -1,0 +1,1202 @@
+2024-05-10 00:53:27.748 +03:00 [DBG] Connection id "0HN3GASORJT3Q" received FIN.
+2024-05-10 00:53:27.766 +03:00 [DBG] The connection queue processing loop for 0HN3GASORJT3Q completed.
+2024-05-10 00:53:27.771 +03:00 [DBG] Connection id "0HN3GASORJT3Q" is closed. The last processed stream ID was 7.
+2024-05-10 00:53:27.772 +03:00 [DBG] Connection id "0HN3GASORJT3Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 00:53:27.783 +03:00 [DBG] Connection id "0HN3GASORJT3Q" stopped.
+2024-05-10 18:01:49.623 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - null null
+2024-05-10 18:01:49.631 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:01:51.231 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:01:51.237 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:01:51.242 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:01:51.255 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:01:51.275 +03:00 [DBG] Connection id "0HN3GASORJT3S" completed keep alive response.
+2024-05-10 18:01:51.299 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - 500 null text/plain; charset=utf-8 1675.8187ms
+2024-05-10 18:15:48.733 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 18:15:49.087 +03:00 [DBG] Hosting starting
+2024-05-10 18:15:49.364 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 18:15:49.381 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 18:15:49.408 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 18:15:49.422 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 18:15:49.428 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:15:49.433 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 18:15:49.435 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:15:49.440 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 18:15:49.445 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 18:15:49.449 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 18:15:49.450 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 18:15:50.350 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 18:15:50.351 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 18:15:50.352 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 18:15:50.353 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 18:15:50.354 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 18:15:50.355 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 18:15:50.457 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 18:15:50.460 +03:00 [INF] Hosting environment: Development
+2024-05-10 18:15:50.462 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 18:15:50.464 +03:00 [DBG] Hosting started
+2024-05-10 18:15:50.816 +03:00 [DBG] Connection id "0HN3H0G9V2KUV" accepted.
+2024-05-10 18:15:50.820 +03:00 [DBG] Connection id "0HN3H0G9V2KUV" started.
+2024-05-10 18:15:50.821 +03:00 [DBG] Connection id "0HN3H0G9V2KV0" accepted.
+2024-05-10 18:15:50.823 +03:00 [DBG] Connection id "0HN3H0G9V2KV0" started.
+2024-05-10 18:15:50.844 +03:00 [DBG] Connection id "0HN3H0G9V2KV0" received FIN.
+2024-05-10 18:15:50.844 +03:00 [DBG] Connection id "0HN3H0G9V2KUV" received FIN.
+2024-05-10 18:15:50.857 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:15:50.857 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:15:51.065 +03:00 [DBG] Connection id "0HN3H0G9V2KUV" stopped.
+2024-05-10 18:15:51.066 +03:00 [DBG] Connection id "0HN3H0G9V2KV0" stopped.
+2024-05-10 18:15:51.072 +03:00 [DBG] Connection id "0HN3H0G9V2KV0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:15:51.072 +03:00 [DBG] Connection id "0HN3H0G9V2KUV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:15:51.159 +03:00 [DBG] Connection id "0HN3H0G9V2KV1" accepted.
+2024-05-10 18:15:51.162 +03:00 [DBG] Connection id "0HN3H0G9V2KV1" started.
+2024-05-10 18:15:51.243 +03:00 [DBG] Connection 0HN3H0G9V2KV1 established using the following protocol: "Tls13"
+2024-05-10 18:15:51.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 18:15:51.759 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 18:15:51.863 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 18:15:51.868 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 18:15:51.899 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 18:15:51.901 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 18:15:51.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 436.8516ms
+2024-05-10 18:15:51.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 18:15:51.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 18:15:51.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 17.166ms
+2024-05-10 18:15:51.991 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.3588ms
+2024-05-10 18:15:52.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 18:15:52.244 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.Get (Project.API),Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:15:52.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 135.128ms
+2024-05-10 18:15:58.403 +03:00 [DBG] Connection id "0HN3H0G9V2KV2" accepted.
+2024-05-10 18:15:58.403 +03:00 [DBG] Connection id "0HN3H0G9V2KV2" received FIN.
+2024-05-10 18:15:58.405 +03:00 [DBG] Connection id "0HN3H0G9V2KV2" started.
+2024-05-10 18:15:58.406 +03:00 [DBG] Connection id "0HN3H0G9V2KV3" accepted.
+2024-05-10 18:15:58.411 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:15:58.412 +03:00 [DBG] Connection id "0HN3H0G9V2KV3" started.
+2024-05-10 18:15:58.416 +03:00 [DBG] Connection id "0HN3H0G9V2KV2" stopped.
+2024-05-10 18:15:58.420 +03:00 [DBG] Connection id "0HN3H0G9V2KV2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:15:58.424 +03:00 [DBG] Connection 0HN3H0G9V2KV3 established using the following protocol: "Tls13"
+2024-05-10 18:15:58.432 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - null null
+2024-05-10 18:15:58.439 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:15:58.517 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:15:58.531 +03:00 [DBG] Endpoint 'Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:15:58.535 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:15:58.542 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:15:58.677 +03:00 [DBG] Connection id "0HN3H0G9V2KV3" completed keep alive response.
+2024-05-10 18:15:58.680 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - 500 null text/plain; charset=utf-8 247.878ms
+2024-05-10 18:51:02.953 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 18:51:03.213 +03:00 [DBG] Hosting starting
+2024-05-10 18:51:03.275 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 18:51:03.288 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 18:51:03.343 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 18:51:03.384 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 18:51:03.401 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:51:03.412 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 18:51:03.420 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:51:03.435 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 18:51:03.449 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 18:51:03.462 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 18:51:03.469 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 18:51:03.991 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 18:51:03.994 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 18:51:03.998 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 18:51:04.000 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 18:51:04.007 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 18:51:04.011 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 18:51:04.179 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 18:51:04.182 +03:00 [INF] Hosting environment: Development
+2024-05-10 18:51:04.185 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 18:51:04.188 +03:00 [DBG] Hosting started
+2024-05-10 18:51:04.378 +03:00 [DBG] Connection id "0HN3H13VRIIDQ" received FIN.
+2024-05-10 18:51:04.378 +03:00 [DBG] Connection id "0HN3H13VRIIDR" received FIN.
+2024-05-10 18:51:04.400 +03:00 [DBG] Connection id "0HN3H13VRIIDQ" accepted.
+2024-05-10 18:51:04.400 +03:00 [DBG] Connection id "0HN3H13VRIIDR" accepted.
+2024-05-10 18:51:04.406 +03:00 [DBG] Connection id "0HN3H13VRIIDQ" started.
+2024-05-10 18:51:04.408 +03:00 [DBG] Connection id "0HN3H13VRIIDR" started.
+2024-05-10 18:51:04.491 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:04.491 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:04.599 +03:00 [DBG] Connection id "0HN3H13VRIIDR" stopped.
+2024-05-10 18:51:04.599 +03:00 [DBG] Connection id "0HN3H13VRIIDQ" stopped.
+2024-05-10 18:51:04.608 +03:00 [DBG] Connection id "0HN3H13VRIIDQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:04.608 +03:00 [DBG] Connection id "0HN3H13VRIIDR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:04.990 +03:00 [DBG] Connection id "0HN3H13VRIIDS" accepted.
+2024-05-10 18:51:04.997 +03:00 [DBG] Connection id "0HN3H13VRIIDS" started.
+2024-05-10 18:51:05.096 +03:00 [DBG] Connection 0HN3H13VRIIDS established using the following protocol: "Tls13"
+2024-05-10 18:51:05.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 18:51:05.334 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 18:51:05.446 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 18:51:05.451 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 18:51:05.481 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 18:51:05.484 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 18:51:05.491 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 309.1627ms
+2024-05-10 18:51:05.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 18:51:05.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 18:51:05.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 22.0335ms
+2024-05-10 18:51:05.584 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.772ms
+2024-05-10 18:51:05.703 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 18:51:05.883 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.Get (Project.API),Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:51:05.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 193.2729ms
+2024-05-10 18:51:13.712 +03:00 [DBG] Connection id "0HN3H13VRIIDT" accepted.
+2024-05-10 18:51:13.712 +03:00 [DBG] Connection id "0HN3H13VRIIDT" received FIN.
+2024-05-10 18:51:13.713 +03:00 [DBG] Connection id "0HN3H13VRIIDT" started.
+2024-05-10 18:51:13.714 +03:00 [DBG] Connection id "0HN3H13VRIIDU" accepted.
+2024-05-10 18:51:13.716 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:13.716 +03:00 [DBG] Connection id "0HN3H13VRIIDU" started.
+2024-05-10 18:51:13.719 +03:00 [DBG] Connection id "0HN3H13VRIIDT" stopped.
+2024-05-10 18:51:13.720 +03:00 [DBG] Connection id "0HN3H13VRIIDT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:13.724 +03:00 [DBG] Connection 0HN3H13VRIIDU established using the following protocol: "Tls13"
+2024-05-10 18:51:13.734 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - null null
+2024-05-10 18:51:13.738 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:51:13.796 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:51:13.805 +03:00 [DBG] Endpoint 'Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:13.808 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:13.815 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:51:13.844 +03:00 [DBG] Connection id "0HN3H13VRIIDU" completed keep alive response.
+2024-05-10 18:51:13.846 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast?api-version=1.0 - 500 null text/plain; charset=utf-8 112.0954ms
+2024-05-10 18:51:21.428 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - null null
+2024-05-10 18:51:21.433 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:51:21.440 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:51:21.441 +03:00 [DBG] Endpoint 'Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:21.444 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:21.447 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:51:21.457 +03:00 [DBG] Connection id "0HN3H13VRIIDU" completed keep alive response.
+2024-05-10 18:51:21.460 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - 500 null text/plain; charset=utf-8 31.7892ms
+2024-05-10 18:51:46.654 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 18:51:46.827 +03:00 [DBG] Hosting starting
+2024-05-10 18:51:46.911 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 18:51:46.935 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 18:51:46.967 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 18:51:47.012 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 18:51:47.026 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:51:47.035 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 18:51:47.041 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:51:47.053 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 18:51:47.064 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 18:51:47.073 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 18:51:47.077 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 18:51:47.731 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 18:51:47.733 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 18:51:47.735 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 18:51:47.737 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 18:51:47.739 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 18:51:47.741 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 18:51:47.797 +03:00 [DBG] Connection id "0HN3H14CPKS8N" received FIN.
+2024-05-10 18:51:47.797 +03:00 [DBG] Connection id "0HN3H14CPKS8O" received FIN.
+2024-05-10 18:51:47.820 +03:00 [DBG] Connection id "0HN3H14CPKS8O" accepted.
+2024-05-10 18:51:47.820 +03:00 [DBG] Connection id "0HN3H14CPKS8N" accepted.
+2024-05-10 18:51:47.827 +03:00 [DBG] Connection id "0HN3H14CPKS8O" started.
+2024-05-10 18:51:47.832 +03:00 [DBG] Connection id "0HN3H14CPKS8N" started.
+2024-05-10 18:51:47.897 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:47.897 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:48.066 +03:00 [DBG] Connection id "0HN3H14CPKS8N" stopped.
+2024-05-10 18:51:48.067 +03:00 [DBG] Connection id "0HN3H14CPKS8O" stopped.
+2024-05-10 18:51:48.079 +03:00 [DBG] Connection id "0HN3H14CPKS8N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:48.098 +03:00 [DBG] Connection id "0HN3H14CPKS8O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:48.103 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 18:51:48.150 +03:00 [INF] Hosting environment: Development
+2024-05-10 18:51:48.154 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 18:51:48.160 +03:00 [DBG] Hosting started
+2024-05-10 18:51:48.524 +03:00 [DBG] Connection id "0HN3H14CPKS8P" accepted.
+2024-05-10 18:51:48.534 +03:00 [DBG] Connection id "0HN3H14CPKS8P" started.
+2024-05-10 18:51:48.860 +03:00 [DBG] Connection 0HN3H14CPKS8P established using the following protocol: "Tls13"
+2024-05-10 18:51:49.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 18:51:50.119 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 18:51:50.439 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 18:51:50.455 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 18:51:50.572 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 18:51:50.603 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 18:51:50.612 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 18:51:50.612 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 18:51:50.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 1229.6459ms
+2024-05-10 18:51:50.666 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 53.8425ms
+2024-05-10 18:51:50.821 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 210.5811ms
+2024-05-10 18:51:51.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 18:51:51.333 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.Get (Project.API),Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:51:51.348 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 312.342ms
+2024-05-10 18:51:54.533 +03:00 [DBG] Connection id "0HN3H14CPKS8Q" received FIN.
+2024-05-10 18:51:54.533 +03:00 [DBG] Connection id "0HN3H14CPKS8Q" accepted.
+2024-05-10 18:51:54.537 +03:00 [DBG] Connection id "0HN3H14CPKS8Q" started.
+2024-05-10 18:51:54.537 +03:00 [DBG] Connection id "0HN3H14CPKS8R" accepted.
+2024-05-10 18:51:54.539 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:51:54.540 +03:00 [DBG] Connection id "0HN3H14CPKS8R" started.
+2024-05-10 18:51:54.545 +03:00 [DBG] Connection id "0HN3H14CPKS8Q" stopped.
+2024-05-10 18:51:54.548 +03:00 [DBG] Connection id "0HN3H14CPKS8Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:51:54.553 +03:00 [DBG] Connection 0HN3H14CPKS8R established using the following protocol: "Tls13"
+2024-05-10 18:51:54.561 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - null null
+2024-05-10 18:51:54.568 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:51:54.614 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:51:54.623 +03:00 [DBG] Endpoint 'Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:54.627 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:51:54.635 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V2.Controllers.WeatherForecastV2Controller.Get (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.Get (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:51:54.656 +03:00 [DBG] Connection id "0HN3H14CPKS8R" completed keep alive response.
+2024-05-10 18:51:54.657 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - 500 null text/plain; charset=utf-8 96.9503ms
+2024-05-10 18:55:59.599 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 18:55:59.793 +03:00 [DBG] Hosting starting
+2024-05-10 18:55:59.842 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 18:55:59.852 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 18:55:59.860 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 18:55:59.870 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 18:55:59.874 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:55:59.878 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 18:55:59.880 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:55:59.884 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 18:55:59.887 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 18:55:59.891 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 18:55:59.892 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 18:56:00.092 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 18:56:00.095 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 18:56:00.100 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 18:56:00.101 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 18:56:00.102 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 18:56:00.102 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 18:56:00.160 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 18:56:00.161 +03:00 [INF] Hosting environment: Development
+2024-05-10 18:56:00.163 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 18:56:00.164 +03:00 [DBG] Hosting started
+2024-05-10 18:56:00.570 +03:00 [DBG] Connection id "0HN3H16O496E5" accepted.
+2024-05-10 18:56:00.570 +03:00 [DBG] Connection id "0HN3H16O496E4" accepted.
+2024-05-10 18:56:00.574 +03:00 [DBG] Connection id "0HN3H16O496E4" started.
+2024-05-10 18:56:00.574 +03:00 [DBG] Connection id "0HN3H16O496E5" started.
+2024-05-10 18:56:00.589 +03:00 [DBG] Connection id "0HN3H16O496E5" received FIN.
+2024-05-10 18:56:00.589 +03:00 [DBG] Connection id "0HN3H16O496E4" received FIN.
+2024-05-10 18:56:00.599 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:56:00.599 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:56:00.638 +03:00 [DBG] Connection id "0HN3H16O496E4" stopped.
+2024-05-10 18:56:00.638 +03:00 [DBG] Connection id "0HN3H16O496E5" stopped.
+2024-05-10 18:56:00.641 +03:00 [DBG] Connection id "0HN3H16O496E4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:56:00.641 +03:00 [DBG] Connection id "0HN3H16O496E5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:56:00.942 +03:00 [DBG] Connection id "0HN3H16O496E6" accepted.
+2024-05-10 18:56:00.946 +03:00 [DBG] Connection id "0HN3H16O496E6" started.
+2024-05-10 18:56:01.000 +03:00 [DBG] Connection 0HN3H16O496E6 established using the following protocol: "Tls13"
+2024-05-10 18:56:01.058 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 18:56:01.201 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 18:56:01.271 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 18:56:01.275 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 18:56:01.300 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 18:56:01.304 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 18:56:01.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 258.8726ms
+2024-05-10 18:56:01.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 18:56:01.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 18:56:01.337 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 17.2684ms
+2024-05-10 18:56:01.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8863ms
+2024-05-10 18:56:01.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 18:56:01.565 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API),Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:56:01.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 129.2312ms
+2024-05-10 18:56:07.876 +03:00 [DBG] Connection id "0HN3H16O496E7" accepted.
+2024-05-10 18:56:07.877 +03:00 [DBG] Connection id "0HN3H16O496E7" received FIN.
+2024-05-10 18:56:07.881 +03:00 [DBG] Connection id "0HN3H16O496E7" started.
+2024-05-10 18:56:07.882 +03:00 [DBG] Connection id "0HN3H16O496E8" accepted.
+2024-05-10 18:56:07.889 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:56:07.890 +03:00 [DBG] Connection id "0HN3H16O496E8" started.
+2024-05-10 18:56:07.898 +03:00 [DBG] Connection id "0HN3H16O496E7" stopped.
+2024-05-10 18:56:07.902 +03:00 [DBG] Connection id "0HN3H16O496E7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:56:07.910 +03:00 [DBG] Connection 0HN3H16O496E8 established using the following protocol: "Tls13"
+2024-05-10 18:56:07.924 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - null null
+2024-05-10 18:56:07.932 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:56:07.993 +03:00 [DBG] 2 candidate(s) found for the request path '/api/WeatherForecast'
+2024-05-10 18:56:08.006 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:56:08.009 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/WeatherForecast'
+2024-05-10 18:56:08.055 +03:00 [DBG] Request matched endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:56:10.578 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 18:56:10.585 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-10 18:56:10.589 +03:00 [INF] Executing endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:56:10.634 +03:00 [INF] Route matched with {action = "GetV1", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Project.API.WeatherForecast] GetV1() on controller Project.API.V1.Controllers.WeatherForecastController (Project.API).
+2024-05-10 18:56:10.642 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-10 18:56:10.646 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-10 18:56:10.649 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:56:10.653 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-10 18:56:10.657 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:56:10.664 +03:00 [DBG] Executing controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:56:10.667 +03:00 [DBG] Executed controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:56:10.679 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-10 18:56:10.686 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-05-10 18:56:10.687 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 18:56:10.689 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 18:56:10.692 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 18:56:10.694 +03:00 [INF] Executing ObjectResult, writing value of type 'Project.API.WeatherForecast[]'.
+2024-05-10 18:56:10.732 +03:00 [INF] Executed action Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API) in 66.6279ms
+2024-05-10 18:56:10.734 +03:00 [INF] Executed endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:56:10.736 +03:00 [DBG] Connection id "0HN3H16O496E8" completed keep alive response.
+2024-05-10 18:56:10.737 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/WeatherForecast - 200 null application/json; charset=utf-8 2814.1224ms
+2024-05-10 18:58:01.593 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 18:58:01.786 +03:00 [DBG] Hosting starting
+2024-05-10 18:58:01.844 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 18:58:01.857 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 18:58:01.874 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 18:58:01.891 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 18:58:01.897 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:58:01.902 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 18:58:01.906 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 18:58:01.912 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 18:58:01.919 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 18:58:01.924 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 18:58:01.926 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 18:58:02.206 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 18:58:02.207 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 18:58:02.207 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 18:58:02.208 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 18:58:02.209 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 18:58:02.209 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 18:58:02.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 18:58:02.283 +03:00 [INF] Hosting environment: Development
+2024-05-10 18:58:02.288 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 18:58:02.290 +03:00 [DBG] Hosting started
+2024-05-10 18:58:02.559 +03:00 [DBG] Connection id "0HN3H17SFLC7C" received FIN.
+2024-05-10 18:58:02.559 +03:00 [DBG] Connection id "0HN3H17SFLC7B" received FIN.
+2024-05-10 18:58:02.579 +03:00 [DBG] Connection id "0HN3H17SFLC7B" accepted.
+2024-05-10 18:58:02.579 +03:00 [DBG] Connection id "0HN3H17SFLC7C" accepted.
+2024-05-10 18:58:02.586 +03:00 [DBG] Connection id "0HN3H17SFLC7B" started.
+2024-05-10 18:58:02.588 +03:00 [DBG] Connection id "0HN3H17SFLC7C" started.
+2024-05-10 18:58:02.640 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:58:02.640 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:58:02.758 +03:00 [DBG] Connection id "0HN3H17SFLC7C" stopped.
+2024-05-10 18:58:02.758 +03:00 [DBG] Connection id "0HN3H17SFLC7B" stopped.
+2024-05-10 18:58:02.765 +03:00 [DBG] Connection id "0HN3H17SFLC7B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:58:02.765 +03:00 [DBG] Connection id "0HN3H17SFLC7C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:58:03.424 +03:00 [DBG] Connection id "0HN3H17SFLC7D" accepted.
+2024-05-10 18:58:03.462 +03:00 [DBG] Connection id "0HN3H17SFLC7D" started.
+2024-05-10 18:58:03.648 +03:00 [DBG] Connection 0HN3H17SFLC7D established using the following protocol: "Tls13"
+2024-05-10 18:58:03.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 18:58:04.006 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 18:58:04.094 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 18:58:04.099 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 18:58:04.132 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 18:58:04.136 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 18:58:04.143 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 335.3513ms
+2024-05-10 18:58:04.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 18:58:04.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 18:58:04.174 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 26.6626ms
+2024-05-10 18:58:04.275 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.8123ms
+2024-05-10 18:58:04.400 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 18:58:04.596 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API),Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 18:58:04.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 201.2044ms
+2024-05-10 18:58:19.778 +03:00 [DBG] Connection id "0HN3H17SFLC7E" accepted.
+2024-05-10 18:58:19.779 +03:00 [DBG] Connection id "0HN3H17SFLC7E" received FIN.
+2024-05-10 18:58:19.781 +03:00 [DBG] Connection id "0HN3H17SFLC7E" started.
+2024-05-10 18:58:19.781 +03:00 [DBG] Connection id "0HN3H17SFLC7F" accepted.
+2024-05-10 18:58:19.787 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 18:58:19.788 +03:00 [DBG] Connection id "0HN3H17SFLC7F" started.
+2024-05-10 18:58:19.791 +03:00 [DBG] Connection id "0HN3H17SFLC7E" stopped.
+2024-05-10 18:58:19.794 +03:00 [DBG] Connection id "0HN3H17SFLC7E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 18:58:19.798 +03:00 [DBG] Connection 0HN3H17SFLC7F established using the following protocol: "Tls13"
+2024-05-10 18:58:19.808 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/v2/WeatherForecast? - null null
+2024-05-10 18:58:19.814 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:58:19.865 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v2/WeatherForecast'
+2024-05-10 18:58:19.880 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 18:58:19.881 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 18:58:19.889 +03:00 [DBG] Request matched endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 18:58:20.028 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 18:58:20.038 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-10 18:58:20.041 +03:00 [INF] Executing endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 18:58:20.077 +03:00 [INF] Route matched with {action = "GetV2", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Project.API.WeatherForecast] GetV2() on controller Project.API.V1.Controllers.WeatherForecastController (Project.API).
+2024-05-10 18:58:20.083 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-10 18:58:20.088 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-10 18:58:20.090 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:58:20.094 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-10 18:58:20.097 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:58:20.105 +03:00 [DBG] Executing controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:58:20.107 +03:00 [DBG] Executed controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:58:20.128 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-10 18:58:20.135 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-05-10 18:58:20.138 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 18:58:20.140 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 18:58:20.143 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 18:58:20.145 +03:00 [INF] Executing ObjectResult, writing value of type 'Project.API.WeatherForecast[]'.
+2024-05-10 18:58:20.206 +03:00 [INF] Executed action Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API) in 96.5283ms
+2024-05-10 18:58:20.209 +03:00 [INF] Executed endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 18:58:20.212 +03:00 [DBG] Connection id "0HN3H17SFLC7F" completed keep alive response.
+2024-05-10 18:58:20.214 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/v2/WeatherForecast? - 200 null application/json; charset=utf-8 406.4802ms
+2024-05-10 18:58:27.088 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/v1/WeatherForecast? - null null
+2024-05-10 18:58:27.094 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:58:27.099 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v1/WeatherForecast'
+2024-05-10 18:58:27.101 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v1/WeatherForecast'
+2024-05-10 18:58:27.103 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v1/WeatherForecast'
+2024-05-10 18:58:27.106 +03:00 [DBG] Request matched endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:58:27.113 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 18:58:27.117 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-10 18:58:27.118 +03:00 [INF] Executing endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:58:27.122 +03:00 [INF] Route matched with {action = "GetV1", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Project.API.WeatherForecast] GetV1() on controller Project.API.V1.Controllers.WeatherForecastController (Project.API).
+2024-05-10 18:58:27.126 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-10 18:58:27.129 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-10 18:58:27.133 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:58:27.136 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-10 18:58:27.138 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 18:58:27.142 +03:00 [DBG] Executing controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:58:27.145 +03:00 [DBG] Executed controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 18:58:27.149 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-10 18:58:27.154 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-05-10 18:58:27.154 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 18:58:27.156 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 18:58:27.157 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 18:58:27.163 +03:00 [INF] Executing ObjectResult, writing value of type 'Project.API.WeatherForecast[]'.
+2024-05-10 18:58:27.167 +03:00 [INF] Executed action Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API) in 25.6265ms
+2024-05-10 18:58:27.169 +03:00 [INF] Executed endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)'
+2024-05-10 18:58:27.171 +03:00 [DBG] Connection id "0HN3H17SFLC7F" completed keep alive response.
+2024-05-10 18:58:27.173 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/v1/WeatherForecast? - 200 null application/json; charset=utf-8 85.2385ms
+2024-05-10 18:58:31.252 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/v3/WeatherForecast? - null null
+2024-05-10 18:58:31.260 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 18:58:31.261 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v3/WeatherForecast'
+2024-05-10 18:58:31.264 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v3/WeatherForecast'
+2024-05-10 18:58:31.266 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v3/WeatherForecast'
+2024-05-10 18:58:31.281 +03:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '3'. Candidate actions: Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)
+2024-05-10 18:58:31.288 +03:00 [DBG] Request matched endpoint 'null'
+2024-05-10 18:58:31.293 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 18:58:31.295 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-10 18:58:31.297 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Http.Endpoint'
+2024-05-10 18:58:31.302 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-10 18:58:31.307 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-05-10 18:58:31.308 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 18:58:31.309 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 18:58:31.311 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 18:58:31.314 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=5.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=5.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2024-05-10 18:58:31.323 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Http.Endpoint'
+2024-05-10 18:58:31.325 +03:00 [DBG] Connection id "0HN3H17SFLC7F" completed keep alive response.
+2024-05-10 18:58:31.326 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/v3/WeatherForecast? - 400 null application/json; charset=utf-8 73.9445ms
+2024-05-10 19:01:08.645 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:01:08.778 +03:00 [DBG] Hosting starting
+2024-05-10 19:01:08.821 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:01:08.827 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:01:08.840 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:01:08.855 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:01:08.862 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:01:08.866 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:01:08.869 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:01:08.874 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:01:08.880 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:01:08.885 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:01:08.888 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:01:09.137 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:01:09.140 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:01:09.141 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:01:09.142 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:01:09.143 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:01:09.144 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:01:09.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:01:09.193 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:01:09.195 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:01:09.196 +03:00 [DBG] Hosting started
+2024-05-10 19:01:09.353 +03:00 [DBG] Connection id "0HN3H19K524MU" received FIN.
+2024-05-10 19:01:09.353 +03:00 [DBG] Connection id "0HN3H19K524MT" received FIN.
+2024-05-10 19:01:09.353 +03:00 [DBG] Connection id "0HN3H19K524MR" accepted.
+2024-05-10 19:01:09.353 +03:00 [DBG] Connection id "0HN3H19K524MS" accepted.
+2024-05-10 19:01:09.365 +03:00 [DBG] Connection id "0HN3H19K524MR" started.
+2024-05-10 19:01:09.365 +03:00 [DBG] Connection id "0HN3H19K524MS" started.
+2024-05-10 19:01:09.413 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:01:09.413 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:01:09.537 +03:00 [DBG] Connection id "0HN3H19K524MR" stopped.
+2024-05-10 19:01:09.543 +03:00 [DBG] Connection id "0HN3H19K524MS" stopped.
+2024-05-10 19:01:09.554 +03:00 [DBG] Connection id "0HN3H19K524MR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:01:09.554 +03:00 [DBG] Connection id "0HN3H19K524MS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:01:09.798 +03:00 [DBG] Connection id "0HN3H19K524MV" accepted.
+2024-05-10 19:01:09.800 +03:00 [DBG] Connection id "0HN3H19K524MV" started.
+2024-05-10 19:01:09.866 +03:00 [DBG] Connection 0HN3H19K524MV established using the following protocol: "Tls13"
+2024-05-10 19:01:09.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:01:10.090 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:01:10.165 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:01:10.170 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:01:10.201 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:01:10.205 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:01:10.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 269.5035ms
+2024-05-10 19:01:10.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:01:10.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:01:10.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.9619ms
+2024-05-10 19:01:10.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1423ms
+2024-05-10 19:01:10.330 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-10 19:01:10.426 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/WeatherForecast" for actions - Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API),Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 19:01:10.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 101.8694ms
+2024-05-10 19:01:15.153 +03:00 [DBG] Connection id "0HN3H19K524N0" accepted.
+2024-05-10 19:01:15.153 +03:00 [DBG] Connection id "0HN3H19K524N0" received FIN.
+2024-05-10 19:01:15.155 +03:00 [DBG] Connection id "0HN3H19K524N0" started.
+2024-05-10 19:01:15.156 +03:00 [DBG] Connection id "0HN3H19K524N1" accepted.
+2024-05-10 19:01:15.162 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:01:15.162 +03:00 [DBG] Connection id "0HN3H19K524N1" started.
+2024-05-10 19:01:15.167 +03:00 [DBG] Connection id "0HN3H19K524N0" stopped.
+2024-05-10 19:01:15.171 +03:00 [DBG] Connection id "0HN3H19K524N0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:01:15.176 +03:00 [DBG] Connection 0HN3H19K524N1 established using the following protocol: "Tls13"
+2024-05-10 19:01:15.188 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/v3/WeatherForecast? - null null
+2024-05-10 19:01:15.199 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 19:01:15.245 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v3/WeatherForecast'
+2024-05-10 19:01:15.258 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v3/WeatherForecast'
+2024-05-10 19:01:15.262 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v3/WeatherForecast'
+2024-05-10 19:01:15.266 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 19:01:15.290 +03:00 [DBG] Connection id "0HN3H19K524N1" completed keep alive response.
+2024-05-10 19:01:15.292 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/v3/WeatherForecast? - 500 null text/plain; charset=utf-8 103.7834ms
+2024-05-10 19:01:30.750 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7174/api/v2/WeatherForecast - null null
+2024-05-10 19:01:30.757 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 19:01:30.765 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:01:30.769 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:01:30.774 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:01:30.781 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)
+Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 19:01:30.791 +03:00 [DBG] Connection id "0HN3H19K524N1" completed keep alive response.
+2024-05-10 19:01:30.794 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7174/api/v2/WeatherForecast - 500 null text/plain; charset=utf-8 44.2737ms
+2024-05-10 19:14:38.178 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:14:38.281 +03:00 [DBG] Hosting starting
+2024-05-10 19:14:38.333 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:14:38.347 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:14:38.358 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:14:38.372 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:14:38.379 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:14:38.383 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:14:38.386 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:14:38.390 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:14:38.396 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:14:38.402 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:14:38.404 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:14:38.620 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:14:38.621 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:14:38.622 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:14:38.623 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:14:38.624 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:14:38.624 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:14:38.697 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:14:38.698 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:14:38.700 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:14:38.701 +03:00 [DBG] Hosting started
+2024-05-10 19:14:38.994 +03:00 [DBG] Connection id "0HN3H1H5ED5G0" accepted.
+2024-05-10 19:14:38.994 +03:00 [DBG] Connection id "0HN3H1H5ED5FV" accepted.
+2024-05-10 19:14:39.000 +03:00 [DBG] Connection id "0HN3H1H5ED5FV" started.
+2024-05-10 19:14:39.000 +03:00 [DBG] Connection id "0HN3H1H5ED5G0" started.
+2024-05-10 19:14:39.018 +03:00 [DBG] Connection id "0HN3H1H5ED5FV" received FIN.
+2024-05-10 19:14:39.018 +03:00 [DBG] Connection id "0HN3H1H5ED5G0" received FIN.
+2024-05-10 19:14:39.025 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:14:39.025 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:14:39.066 +03:00 [DBG] Connection id "0HN3H1H5ED5G0" stopped.
+2024-05-10 19:14:39.066 +03:00 [DBG] Connection id "0HN3H1H5ED5FV" stopped.
+2024-05-10 19:14:39.068 +03:00 [DBG] Connection id "0HN3H1H5ED5G0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:14:39.068 +03:00 [DBG] Connection id "0HN3H1H5ED5FV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:14:39.368 +03:00 [DBG] Connection id "0HN3H1H5ED5G1" accepted.
+2024-05-10 19:14:39.369 +03:00 [DBG] Connection id "0HN3H1H5ED5G1" started.
+2024-05-10 19:14:39.469 +03:00 [DBG] Connection 0HN3H1H5ED5G1 established using the following protocol: "Tls13"
+2024-05-10 19:14:39.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:14:39.693 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:14:39.783 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:14:39.787 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:14:39.809 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:14:39.812 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:14:39.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 271.2701ms
+2024-05-10 19:14:39.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:14:39.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:14:39.831 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.5193ms
+2024-05-10 19:14:39.873 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.409ms
+2024-05-10 19:14:39.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:14:40.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 243.0999ms
+2024-05-10 19:26:47.154 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:26:47.255 +03:00 [DBG] Hosting starting
+2024-05-10 19:26:47.346 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:26:47.364 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:26:47.385 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:26:47.405 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:26:47.413 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:26:47.417 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:26:47.420 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:26:47.426 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:26:47.431 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:26:47.435 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:26:47.436 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:26:47.692 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:26:47.693 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:26:47.695 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:26:47.697 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:26:47.698 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:26:47.699 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:26:47.764 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:26:47.765 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:26:47.767 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:26:47.770 +03:00 [DBG] Hosting started
+2024-05-10 19:26:48.092 +03:00 [DBG] Connection id "0HN3H1NUNK2AM" accepted.
+2024-05-10 19:26:48.092 +03:00 [DBG] Connection id "0HN3H1NUNK2AL" accepted.
+2024-05-10 19:26:48.094 +03:00 [DBG] Connection id "0HN3H1NUNK2AM" started.
+2024-05-10 19:26:48.094 +03:00 [DBG] Connection id "0HN3H1NUNK2AL" started.
+2024-05-10 19:26:48.110 +03:00 [DBG] Connection id "0HN3H1NUNK2AM" received FIN.
+2024-05-10 19:26:48.110 +03:00 [DBG] Connection id "0HN3H1NUNK2AL" received FIN.
+2024-05-10 19:26:48.130 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:26:48.130 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:26:48.183 +03:00 [DBG] Connection id "0HN3H1NUNK2AL" stopped.
+2024-05-10 19:26:48.183 +03:00 [DBG] Connection id "0HN3H1NUNK2AM" stopped.
+2024-05-10 19:26:48.186 +03:00 [DBG] Connection id "0HN3H1NUNK2AM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:26:48.186 +03:00 [DBG] Connection id "0HN3H1NUNK2AL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:26:48.331 +03:00 [DBG] Connection id "0HN3H1NUNK2AN" accepted.
+2024-05-10 19:26:48.335 +03:00 [DBG] Connection id "0HN3H1NUNK2AN" started.
+2024-05-10 19:26:48.430 +03:00 [DBG] Connection 0HN3H1NUNK2AN established using the following protocol: "Tls13"
+2024-05-10 19:26:48.553 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:26:48.883 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:26:49.006 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:26:49.012 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:26:49.058 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:26:49.061 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:26:49.071 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 531.582ms
+2024-05-10 19:26:49.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:26:49.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:26:49.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 27.0316ms
+2024-05-10 19:26:49.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.9035ms
+2024-05-10 19:26:49.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:26:49.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 320.5919ms
+2024-05-10 19:27:02.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - null null
+2024-05-10 19:27:02.416 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - 200 null application/json;charset=utf-8 13.2553ms
+2024-05-10 19:27:08.903 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/api/v2/WeatherForecast - null null
+2024-05-10 19:27:08.909 +03:00 [DBG] The request path  does not match the path filter
+2024-05-10 19:27:08.953 +03:00 [DBG] 2 candidate(s) found for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:27:08.964 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV1 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:27:08.969 +03:00 [DBG] Endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)' with route pattern 'api/v{version:apiVersion}/WeatherForecast' is valid for the request path '/api/v2/WeatherForecast'
+2024-05-10 19:27:08.977 +03:00 [DBG] Request matched endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 19:27:09.100 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-05-10 19:27:09.105 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-10 19:27:09.108 +03:00 [INF] Executing endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 19:27:09.137 +03:00 [INF] Route matched with {action = "GetV2", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Project.API.WeatherForecast] GetV2() on controller Project.API.V1.Controllers.WeatherForecastController (Project.API).
+2024-05-10 19:27:09.142 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-10 19:27:09.145 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-10 19:27:09.148 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 19:27:09.151 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-10 19:27:09.153 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2024-05-10 19:27:09.158 +03:00 [DBG] Executing controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 19:27:09.162 +03:00 [DBG] Executed controller factory for controller Project.API.V1.Controllers.WeatherForecastController (Project.API)
+2024-05-10 19:27:09.172 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-10 19:27:09.181 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-05-10 19:27:09.191 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-05-10 19:27:09.194 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-10 19:27:09.195 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-10 19:27:09.198 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-10 19:27:09.201 +03:00 [INF] Executing ObjectResult, writing value of type 'Project.API.WeatherForecast[]'.
+2024-05-10 19:27:09.231 +03:00 [INF] Executed action Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API) in 69.0256ms
+2024-05-10 19:27:09.234 +03:00 [INF] Executed endpoint 'Project.API.V1.Controllers.WeatherForecastController.GetV2 (Project.API)'
+2024-05-10 19:27:09.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/api/v2/WeatherForecast - 200 null application/json; charset=utf-8 333.0265ms
+2024-05-10 19:27:52.628 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:27:52.786 +03:00 [DBG] Hosting starting
+2024-05-10 19:27:52.874 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:27:52.899 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:27:52.933 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:27:52.963 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:27:52.980 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:27:52.993 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:27:53.000 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:27:53.014 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:27:53.028 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:27:53.043 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:27:53.048 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:27:53.613 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:27:53.617 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:27:53.623 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:27:53.625 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:27:53.627 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:27:53.629 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:27:53.891 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:27:53.894 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:27:53.896 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:27:53.899 +03:00 [DBG] Hosting started
+2024-05-10 19:27:53.934 +03:00 [DBG] Connection id "0HN3H1OIBHKIC" received FIN.
+2024-05-10 19:27:53.947 +03:00 [DBG] Connection id "0HN3H1OIBHKIC" accepted.
+2024-05-10 19:27:53.950 +03:00 [DBG] Connection id "0HN3H1OIBHKIC" started.
+2024-05-10 19:27:54.006 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:27:54.104 +03:00 [DBG] Connection id "0HN3H1OIBHKIC" stopped.
+2024-05-10 19:27:54.112 +03:00 [DBG] Connection id "0HN3H1OIBHKIC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:27:54.459 +03:00 [DBG] Connection id "0HN3H1OIBHKID" accepted.
+2024-05-10 19:27:54.472 +03:00 [DBG] Connection id "0HN3H1OIBHKID" started.
+2024-05-10 19:27:54.631 +03:00 [DBG] Connection 0HN3H1OIBHKID established using the following protocol: "Tls13"
+2024-05-10 19:27:54.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:27:55.131 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:27:55.271 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:27:55.277 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:27:55.322 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:27:55.326 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:27:55.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:27:55.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:27:55.366 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 468.6613ms
+2024-05-10 19:27:55.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 41.7572ms
+2024-05-10 19:27:55.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 166.9621ms
+2024-05-10 19:27:55.693 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:27:56.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 446.2765ms
+2024-05-10 19:27:59.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - null null
+2024-05-10 19:27:59.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - 404 0 null 13.9495ms
+2024-05-10 19:28:02.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:28:02.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 36.9545ms
+2024-05-10 19:29:07.513 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:29:07.574 +03:00 [DBG] Hosting starting
+2024-05-10 19:29:07.611 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:29:07.619 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:29:07.631 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:29:07.645 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:29:07.652 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:29:07.657 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:29:07.660 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:29:07.666 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:29:07.672 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:29:07.677 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:29:07.680 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:29:07.874 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:29:07.876 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:29:07.877 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:29:07.879 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:29:07.880 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:29:07.880 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:29:07.945 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:29:07.947 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:29:07.949 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:29:07.950 +03:00 [DBG] Hosting started
+2024-05-10 19:29:08.026 +03:00 [DBG] Connection id "0HN3H1P8E4LC0" received FIN.
+2024-05-10 19:29:08.026 +03:00 [DBG] Connection id "0HN3H1P8E4LC1" received FIN.
+2024-05-10 19:29:08.049 +03:00 [DBG] Connection id "0HN3H1P8E4LC0" accepted.
+2024-05-10 19:29:08.049 +03:00 [DBG] Connection id "0HN3H1P8E4LC1" accepted.
+2024-05-10 19:29:08.058 +03:00 [DBG] Connection id "0HN3H1P8E4LC0" started.
+2024-05-10 19:29:08.062 +03:00 [DBG] Connection id "0HN3H1P8E4LC1" started.
+2024-05-10 19:29:08.119 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:29:08.119 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:29:08.179 +03:00 [DBG] Connection id "0HN3H1P8E4LC0" stopped.
+2024-05-10 19:29:08.179 +03:00 [DBG] Connection id "0HN3H1P8E4LC1" stopped.
+2024-05-10 19:29:08.183 +03:00 [DBG] Connection id "0HN3H1P8E4LC1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:29:08.183 +03:00 [DBG] Connection id "0HN3H1P8E4LC0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:29:08.380 +03:00 [DBG] Connection id "0HN3H1P8E4LC2" accepted.
+2024-05-10 19:29:08.385 +03:00 [DBG] Connection id "0HN3H1P8E4LC2" started.
+2024-05-10 19:29:08.472 +03:00 [DBG] Connection 0HN3H1P8E4LC2 established using the following protocol: "Tls13"
+2024-05-10 19:29:08.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:29:08.791 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:29:08.850 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:29:08.854 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:29:08.875 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:29:08.876 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:29:08.882 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 294.1621ms
+2024-05-10 19:29:08.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:29:08.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:29:08.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.5844ms
+2024-05-10 19:29:08.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.2796ms
+2024-05-10 19:29:09.021 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:29:09.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 198.357ms
+2024-05-10 19:31:39.860 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:31:39.909 +03:00 [DBG] Hosting starting
+2024-05-10 19:31:39.937 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:31:39.943 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:31:39.951 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:31:39.959 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:31:39.964 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:31:39.968 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:31:39.970 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:31:39.974 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:31:39.977 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:31:39.980 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:31:39.981 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:31:40.267 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:31:40.268 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:31:40.270 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:31:40.272 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:31:40.273 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:31:40.274 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:31:40.392 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:31:40.393 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:31:40.394 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:31:40.395 +03:00 [DBG] Hosting started
+2024-05-10 19:31:40.548 +03:00 [DBG] Connection id "0HN3H1QLSMIBH" accepted.
+2024-05-10 19:31:40.548 +03:00 [DBG] Connection id "0HN3H1QLSMIBG" accepted.
+2024-05-10 19:31:40.555 +03:00 [DBG] Connection id "0HN3H1QLSMIBG" started.
+2024-05-10 19:31:40.556 +03:00 [DBG] Connection id "0HN3H1QLSMIBH" started.
+2024-05-10 19:31:40.557 +03:00 [DBG] Connection id "0HN3H1QLSMIBH" received FIN.
+2024-05-10 19:31:40.557 +03:00 [DBG] Connection id "0HN3H1QLSMIBG" received FIN.
+2024-05-10 19:31:40.571 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:31:40.571 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:31:40.603 +03:00 [DBG] Connection id "0HN3H1QLSMIBG" stopped.
+2024-05-10 19:31:40.603 +03:00 [DBG] Connection id "0HN3H1QLSMIBH" stopped.
+2024-05-10 19:31:40.606 +03:00 [DBG] Connection id "0HN3H1QLSMIBH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:31:40.606 +03:00 [DBG] Connection id "0HN3H1QLSMIBG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:31:41.037 +03:00 [DBG] Connection id "0HN3H1QLSMIBI" accepted.
+2024-05-10 19:31:41.052 +03:00 [DBG] Connection id "0HN3H1QLSMIBI" started.
+2024-05-10 19:31:41.158 +03:00 [DBG] Connection 0HN3H1QLSMIBI established using the following protocol: "Tls13"
+2024-05-10 19:31:41.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:31:41.485 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:31:41.570 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:31:41.573 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:31:41.591 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:31:41.592 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:31:41.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 302.502ms
+2024-05-10 19:31:41.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:31:41.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:31:41.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.7689ms
+2024-05-10 19:31:41.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.9239ms
+2024-05-10 19:31:41.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:31:41.949 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 181.0945ms
+2024-05-10 19:32:09.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - null null
+2024-05-10 19:32:09.304 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - 404 0 null 20.1441ms
+2024-05-10 19:32:12.288 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:32:12.329 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 39.4498ms
+2024-05-10 19:32:44.598 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:32:44.679 +03:00 [DBG] Hosting starting
+2024-05-10 19:32:44.714 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:32:44.721 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:32:44.729 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:32:44.737 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:32:44.741 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:32:44.743 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:32:44.745 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:32:44.749 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:32:44.752 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:32:44.755 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:32:44.756 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:32:44.933 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:32:44.934 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:32:44.937 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:32:44.939 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:32:44.940 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:32:44.941 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:32:45.010 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:32:45.011 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:32:45.013 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:32:45.015 +03:00 [DBG] Hosting started
+2024-05-10 19:32:45.322 +03:00 [DBG] Connection id "0HN3H1R96E82N" accepted.
+2024-05-10 19:32:45.322 +03:00 [DBG] Connection id "0HN3H1R96E82O" accepted.
+2024-05-10 19:32:45.326 +03:00 [DBG] Connection id "0HN3H1R96E82N" started.
+2024-05-10 19:32:45.326 +03:00 [DBG] Connection id "0HN3H1R96E82O" started.
+2024-05-10 19:32:45.346 +03:00 [DBG] Connection id "0HN3H1R96E82N" received FIN.
+2024-05-10 19:32:45.346 +03:00 [DBG] Connection id "0HN3H1R96E82O" received FIN.
+2024-05-10 19:32:45.353 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:32:45.353 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:32:45.398 +03:00 [DBG] Connection id "0HN3H1R96E82N" stopped.
+2024-05-10 19:32:45.398 +03:00 [DBG] Connection id "0HN3H1R96E82O" stopped.
+2024-05-10 19:32:45.403 +03:00 [DBG] Connection id "0HN3H1R96E82N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:32:45.403 +03:00 [DBG] Connection id "0HN3H1R96E82O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:32:45.815 +03:00 [DBG] Connection id "0HN3H1R96E82P" accepted.
+2024-05-10 19:32:45.822 +03:00 [DBG] Connection id "0HN3H1R96E82P" started.
+2024-05-10 19:32:45.912 +03:00 [DBG] Connection 0HN3H1R96E82P established using the following protocol: "Tls13"
+2024-05-10 19:32:45.993 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:32:46.194 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:33:52.548 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-10 19:33:52.605 +03:00 [DBG] Hosting starting
+2024-05-10 19:33:52.642 +03:00 [INF] User profile is available. Using 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-10 19:33:52.651 +03:00 [DBG] Reading data from file 'C:\Users\MI\AppData\Local\ASP.NET\DataProtection-Keys\key-42b9881e-4212-4880-80ea-cceeaa9b9aa4.xml'.
+2024-05-10 19:33:52.661 +03:00 [DBG] Found key {42b9881e-4212-4880-80ea-cceeaa9b9aa4}.
+2024-05-10 19:33:52.678 +03:00 [DBG] Considering key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} with expiration date 2024-07-08 10:53:39Z as default key.
+2024-05-10 19:33:52.687 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:33:52.695 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-05-10 19:33:52.701 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-05-10 19:33:52.708 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-05-10 19:33:52.718 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-05-10 19:33:52.728 +03:00 [DBG] Using key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} as the default key.
+2024-05-10 19:33:52.736 +03:00 [DBG] Key ring with default key {42b9881e-4212-4880-80ea-cceeaa9b9aa4} was loaded during application startup.
+2024-05-10 19:33:52.985 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-10 19:33:52.989 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-10 19:33:52.998 +03:00 [DBG] Loaded hosting startup assembly Project.API
+2024-05-10 19:33:52.999 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-05-10 19:33:53.000 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-10 19:33:53.001 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-10 19:33:53.132 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 19:33:53.133 +03:00 [INF] Hosting environment: Development
+2024-05-10 19:33:53.134 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-10 19:33:53.136 +03:00 [DBG] Hosting started
+2024-05-10 19:33:53.457 +03:00 [DBG] Connection id "0HN3H1RTG7BKC" accepted.
+2024-05-10 19:33:53.457 +03:00 [DBG] Connection id "0HN3H1RTG7BKB" accepted.
+2024-05-10 19:33:53.460 +03:00 [DBG] Connection id "0HN3H1RTG7BKC" started.
+2024-05-10 19:33:53.460 +03:00 [DBG] Connection id "0HN3H1RTG7BKB" started.
+2024-05-10 19:33:53.478 +03:00 [DBG] Connection id "0HN3H1RTG7BKC" received FIN.
+2024-05-10 19:33:53.478 +03:00 [DBG] Connection id "0HN3H1RTG7BKB" received FIN.
+2024-05-10 19:33:53.485 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:33:53.485 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-10 19:33:53.523 +03:00 [DBG] Connection id "0HN3H1RTG7BKB" stopped.
+2024-05-10 19:33:53.523 +03:00 [DBG] Connection id "0HN3H1RTG7BKC" stopped.
+2024-05-10 19:33:53.526 +03:00 [DBG] Connection id "0HN3H1RTG7BKB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:33:53.526 +03:00 [DBG] Connection id "0HN3H1RTG7BKC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 19:33:53.770 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" accepted.
+2024-05-10 19:33:53.786 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" started.
+2024-05-10 19:33:53.878 +03:00 [DBG] Connection 0HN3H1RTG7BKD established using the following protocol: "Tls13"
+2024-05-10 19:33:53.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-10 19:33:54.109 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-10 19:33:54.184 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-05-10 19:33:54.189 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-10 19:33:54.215 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-05-10 19:33:54.218 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-10 19:33:54.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-10 19:33:54.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 19:33:54.232 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 254.0325ms
+2024-05-10 19:33:54.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 26.7333ms
+2024-05-10 19:33:54.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.7299ms
+2024-05-10 19:33:54.395 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:33:54.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 158.6292ms
+2024-05-10 19:33:57.837 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - null null
+2024-05-10 19:33:57.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v2/Swagger.json - 200 null application/json;charset=utf-8 9.6688ms
+2024-05-10 19:34:01.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - null null
+2024-05-10 19:34:01.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/Swagger.json - 200 null application/json;charset=utf-8 33.7853ms
+2024-05-10 22:22:51.818 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" received FIN.
+2024-05-10 22:22:51.832 +03:00 [DBG] The connection queue processing loop for 0HN3H1RTG7BKD completed.
+2024-05-10 22:22:51.834 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" is closed. The last processed stream ID was 11.
+2024-05-10 22:22:51.836 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-10 22:22:51.851 +03:00 [DBG] Connection id "0HN3H1RTG7BKD" stopped.

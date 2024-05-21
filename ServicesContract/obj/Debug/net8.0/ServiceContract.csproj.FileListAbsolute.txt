@@ -1,0 +1,15 @@
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\bin\Debug\net8.0\ServiceContract.deps.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\bin\Debug\net8.0\ServiceContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\bin\Debug\net8.0\ServiceContract.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\bin\Debug\net8.0\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\bin\Debug\net8.0\Entities.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.csproj.AssemblyReference.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.GeneratedMSBuildEditorConfig.editorconfig
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.AssemblyInfoInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.AssemblyInfo.cs
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.csproj.CoreCompileInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceC.C92B70ED.Up2Date
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\refint\ServiceContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ServiceContract.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\ServicesContract\obj\Debug\net8.0\ref\ServiceContract.dll

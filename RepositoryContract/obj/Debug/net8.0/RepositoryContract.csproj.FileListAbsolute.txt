@@ -1,0 +1,15 @@
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\bin\Debug\net8.0\RepositoryContract.deps.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\bin\Debug\net8.0\RepositoryContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\bin\Debug\net8.0\RepositoryContract.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\bin\Debug\net8.0\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\bin\Debug\net8.0\Entities.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.csproj.AssemblyReference.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.GeneratedMSBuildEditorConfig.editorconfig
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.AssemblyInfoInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.AssemblyInfo.cs
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.csproj.CoreCompileInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\Reposito.DDB7A38D.Up2Date
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\refint\RepositoryContract.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\RepositoryContract.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\RepositoryContract\obj\Debug\net8.0\ref\RepositoryContract.dll

@@ -1,0 +1,17 @@
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Infrastructure.deps.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Infrastructure.runtimeconfig.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Infrastructure.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Infrastructure.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Core.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Project.Core.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.csproj.AssemblyReference.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.AssemblyInfoInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.AssemblyInfo.cs
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.csproj.CoreCompileInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project..A2F26F6C.Up2Date
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\refint\Project.Infrastructure.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Project.Infrastructure.genruntimeconfig.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\ref\Project.Infrastructure.dll

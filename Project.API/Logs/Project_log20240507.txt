@@ -1,0 +1,95 @@
+2024-05-07 18:23:57.160 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-07 18:23:57.210 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-07 18:23:57.258 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 18:23:57.260 +03:00 [INF] Hosting environment: Development
+2024-05-07 18:23:57.261 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-07 18:23:58.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-07 18:23:58.918 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 489.9194ms
+2024-05-07 18:23:58.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-07 18:23:58.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:23:58.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 46.3588ms
+2024-05-07 18:23:59.108 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.8047ms
+2024-05-07 18:23:59.703 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-07 18:24:00.019 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 316.2163ms
+2024-05-07 18:26:16.419 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-07 18:26:16.465 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-07 18:26:16.532 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 18:26:16.534 +03:00 [INF] Hosting environment: Development
+2024-05-07 18:26:16.535 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-07 18:26:17.021 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-07 18:26:17.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 307.4846ms
+2024-05-07 18:26:17.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-07 18:26:17.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:26:17.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 19.8564ms
+2024-05-07 18:26:17.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.5593ms
+2024-05-07 18:26:17.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-07 18:26:17.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.5135ms
+2024-05-07 18:51:43.425 +03:00 [INF] Now listening on: https://localhost:7174
+2024-05-07 18:51:43.513 +03:00 [INF] Now listening on: http://localhost:5047
+2024-05-07 18:51:43.616 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 18:51:43.619 +03:00 [INF] Hosting environment: Development
+2024-05-07 18:51:43.623 +03:00 [INF] Content root path: D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Project.API
+2024-05-07 18:51:44.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/index.html - null null
+2024-05-07 18:51:44.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/index.html - 200 null text/html;charset=utf-8 399.4545ms
+2024-05-07 18:51:44.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:51:44.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/_vs/browserLink - null null
+2024-05-07 18:51:44.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 18.2081ms
+2024-05-07 18:51:44.941 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.6939ms
+2024-05-07 18:51:45.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - null null
+2024-05-07 18:51:45.661 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 307.9555ms
+2024-05-07 18:52:13.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7174/api/Orders - null null
+2024-05-07 18:52:13.338 +03:00 [INF] Executing endpoint 'Project.API.Controllers.OrdersController.GetAllOrders (Project.API)'
+2024-05-07 18:52:13.397 +03:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ServicesContract.DTO.OrderResponse]]] GetAllOrders() on controller Project.API.Controllers.OrdersController (Project.API).
+2024-05-07 18:52:15.220 +03:00 [INF] Retrieving all orders
+2024-05-07 18:52:15.225 +03:00 [INF] Retrieving all orders from services
+2024-05-07 18:52:15.228 +03:00 [INF] Retrieving all orders from database...
+2024-05-07 18:52:20.661 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[CustomerName], [o].[OrderDate], [o].[OrderNumber], [o].[TotalAmount]
+FROM [Orders] AS [o]
+2024-05-07 18:52:20.869 +03:00 [INF] All orders are retrieved from database
+2024-05-07 18:52:20.874 +03:00 [INF] Getting Order Items by order Id "11082d7b-17d2-4d59-003a-08dc6ddfce54" ...
+2024-05-07 18:52:20.879 +03:00 [INF] Retrieving order items with order Id "11082d7b-17d2-4d59-003a-08dc6ddfce54" from database...
+2024-05-07 18:52:21.097 +03:00 [INF] Executed DbCommand (121ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderItemId], [o].[OrderId], [o].[ProductName], [o].[Quantity], [o].[TotalPrice], [o].[UnitPrice]
+FROM [OrderItems] AS [o]
+WHERE [o].[OrderId] = @__orderId_0
+2024-05-07 18:52:21.111 +03:00 [INF] Order items with order Id "11082d7b-17d2-4d59-003a-08dc6ddfce54" is retrieved from database successfully
+2024-05-07 18:52:21.116 +03:00 [INF] Order Items with order Id "11082d7b-17d2-4d59-003a-08dc6ddfce54" are retrieved successfully
+2024-05-07 18:52:21.121 +03:00 [INF] Getting Order Items by order Id "d3242b6b-49fb-46ff-003b-08dc6ddfce54" ...
+2024-05-07 18:52:21.125 +03:00 [INF] Retrieving order items with order Id "d3242b6b-49fb-46ff-003b-08dc6ddfce54" from database...
+2024-05-07 18:52:21.140 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderItemId], [o].[OrderId], [o].[ProductName], [o].[Quantity], [o].[TotalPrice], [o].[UnitPrice]
+FROM [OrderItems] AS [o]
+WHERE [o].[OrderId] = @__orderId_0
+2024-05-07 18:52:21.147 +03:00 [INF] Order items with order Id "d3242b6b-49fb-46ff-003b-08dc6ddfce54" is retrieved from database successfully
+2024-05-07 18:52:21.150 +03:00 [INF] Order Items with order Id "d3242b6b-49fb-46ff-003b-08dc6ddfce54" are retrieved successfully
+2024-05-07 18:52:21.152 +03:00 [INF] Getting Order Items by order Id "c3a2a1b1-a157-4b3d-0bd2-08dc6de41dc6" ...
+2024-05-07 18:52:21.155 +03:00 [INF] Retrieving order items with order Id "c3a2a1b1-a157-4b3d-0bd2-08dc6de41dc6" from database...
+2024-05-07 18:52:21.163 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderItemId], [o].[OrderId], [o].[ProductName], [o].[Quantity], [o].[TotalPrice], [o].[UnitPrice]
+FROM [OrderItems] AS [o]
+WHERE [o].[OrderId] = @__orderId_0
+2024-05-07 18:52:21.184 +03:00 [INF] Order items with order Id "c3a2a1b1-a157-4b3d-0bd2-08dc6de41dc6" is retrieved from database successfully
+2024-05-07 18:52:21.187 +03:00 [INF] Order Items with order Id "c3a2a1b1-a157-4b3d-0bd2-08dc6de41dc6" are retrieved successfully
+2024-05-07 18:52:21.189 +03:00 [INF] Getting Order Items by order Id "f4816224-70d6-4491-ac52-34f298ace16f" ...
+2024-05-07 18:52:21.193 +03:00 [INF] Retrieving order items with order Id "f4816224-70d6-4491-ac52-34f298ace16f" from database...
+2024-05-07 18:52:21.201 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderItemId], [o].[OrderId], [o].[ProductName], [o].[Quantity], [o].[TotalPrice], [o].[UnitPrice]
+FROM [OrderItems] AS [o]
+WHERE [o].[OrderId] = @__orderId_0
+2024-05-07 18:52:21.255 +03:00 [INF] Order items with order Id "f4816224-70d6-4491-ac52-34f298ace16f" is retrieved from database successfully
+2024-05-07 18:52:21.263 +03:00 [INF] Order Items with order Id "f4816224-70d6-4491-ac52-34f298ace16f" are retrieved successfully
+2024-05-07 18:52:21.266 +03:00 [INF] Getting Order Items by order Id "735886c0-faf3-49ca-9776-8a20b756f1cb" ...
+2024-05-07 18:52:21.269 +03:00 [INF] Retrieving order items with order Id "735886c0-faf3-49ca-9776-8a20b756f1cb" from database...
+2024-05-07 18:52:21.275 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderItemId], [o].[OrderId], [o].[ProductName], [o].[Quantity], [o].[TotalPrice], [o].[UnitPrice]
+FROM [OrderItems] AS [o]
+WHERE [o].[OrderId] = @__orderId_0
+2024-05-07 18:52:21.282 +03:00 [INF] Order items with order Id "735886c0-faf3-49ca-9776-8a20b756f1cb" is retrieved from database successfully
+2024-05-07 18:52:21.284 +03:00 [INF] Order Items with order Id "735886c0-faf3-49ca-9776-8a20b756f1cb" are retrieved successfully
+2024-05-07 18:52:21.287 +03:00 [INF] Orders retrieved successfully from services
+2024-05-07 18:52:21.289 +03:00 [INF] All orders retrieved successfully
+2024-05-07 18:52:21.324 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServicesContract.DTO.OrderResponse, ServiceContract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 18:52:21.388 +03:00 [INF] Executed action Project.API.Controllers.OrdersController.GetAllOrders (Project.API) in 7979.3468ms
+2024-05-07 18:52:21.392 +03:00 [INF] Executed endpoint 'Project.API.Controllers.OrdersController.GetAllOrders (Project.API)'
+2024-05-07 18:52:21.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7174/api/Orders - 200 null application/json; charset=utf-8 8137.6077ms

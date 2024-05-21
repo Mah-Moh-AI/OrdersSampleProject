@@ -1,0 +1,14 @@
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Entities.deps.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Entities.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\refint\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.pdb
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\ref\Entities.dll
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+D:\0- CS Study\3_dotNet_Template_Projects\1_Template\test2\Project\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
